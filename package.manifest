@@ -1,0 +1,20 @@
+{   
+    //you can define multiple editors   
+    propertyEditors: [      
+        {
+            /*this must be a unique alias*/ 
+            alias: "My.CountryPicker",
+            /*the name*/
+            name: "Country Picker",
+            /*the html file we will load for the editor*/
+            editor: {
+                view: "~/App_Plugins/CountryPicker/countrypicker.html"
+            }
+        }
+    ]
+    ,
+    //array of files we want to inject into the application on app_start
+    javascript: [
+        '~/App_Plugins/CountryPicker/countrypicker.controller.js'
+    ]
+}
